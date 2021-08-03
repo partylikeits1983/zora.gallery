@@ -13,4 +13,12 @@ module.exports = {
     // Return modified config
     return config;
   },
+
+  exportTrailingSlash: true,
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' }
+    };
+  }
+
 };
